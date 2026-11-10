@@ -93,7 +93,7 @@ class TachaoApp extends StatelessWidget {
         builder: (context, themeProvider, child) {
           return BarcodeKeyboardListener(
             child: MaterialApp(
-              title: 'Napoleta',
+              title: 'Leantech',
               debugShowCheckedModeBanner: false,
               scrollBehavior: AppScrollBehavior(),
               theme: AppTheme.lightTheme,

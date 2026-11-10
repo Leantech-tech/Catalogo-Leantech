@@ -1,11 +1,11 @@
 {
-    "name": "Napoleta",
-    "short_name": "Napoleta",
+    "name": "Leantech",
+    "short_name": "Leantech",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#105B3F",
     "theme_color": "#105B3F",
-    "description": "Cardápio digital da Napoleta.",
+    "description": "Cardápio digital da Leantech.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

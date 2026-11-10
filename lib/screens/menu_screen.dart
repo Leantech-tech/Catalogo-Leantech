@@ -216,9 +216,9 @@ class _MenuScreenState extends State<MenuScreen> with WidgetsBindingObserver {
     }
   }
 
-  /// Gesto administrativo: tocar 5 vezes no logo em menos de 2 segundos
-  /// permite sair do modo quiosque para manutenção.
-  void _handleAdminLogoTap() {
+  /// Gesto administrativo: tocar 5 vezes no nome da empresa em menos de 2
+  /// segundos permite sair do modo quiosque para manutenção.
+  void _handleAdminCompanyNameTap() {
     _adminTapCount++;
     _adminTapResetTimer?.cancel();
     _adminTapResetTimer = Timer(const Duration(seconds: 2), () {
@@ -604,34 +604,25 @@ class _MenuScreenState extends State<MenuScreen> with WidgetsBindingObserver {
                 visualDensity: VisualDensity.compact,
               ),
             ),
-          GestureDetector(
-            onTap: _handleAdminLogoTap,
-            child: ClipRRect(
-              borderRadius: BorderRadius.circular(12),
-              child: Image.asset(
-                'assets/images/logo.png',
-                height: isTablet ? 52 : (isSmallPhone ? 34 : 40),
-                width: isTablet ? 52 : (isSmallPhone ? 34 : 40),
-                fit: BoxFit.cover,
-              ),
-            ),
-          ),
-          const SizedBox(width: 12),
           Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  'Napoleta',
-                  style: GoogleFonts.poppins(
-                    fontSize: isTablet ? 20 : (isSmallPhone ? 15 : 17),
-                    fontWeight: FontWeight.w700,
-                    color: AppTheme.textPrimary(context),
+            child: GestureDetector(
+              behavior: HitTestBehavior.opaque,
+              onTap: _handleAdminCompanyNameTap,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    'Leantech',
+                    style: GoogleFonts.poppins(
+                      fontSize: isTablet ? 20 : (isSmallPhone ? 15 : 17),
+                      fontWeight: FontWeight.w700,
+                      color: AppTheme.textPrimary(context),
+                    ),
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
                   ),
-                  maxLines: 1,
-                  overflow: TextOverflow.ellipsis,
-                ),
-              ],
+                ],
+              ),
             ),
           ),
           Row(
@@ -802,16 +793,6 @@ class _MenuScreenState extends State<MenuScreen> with WidgetsBindingObserver {
               padding: const EdgeInsets.fromLTRB(20, 20, 20, 8),
               child: Row(
                 children: [
-                  ClipRRect(
-                    borderRadius: BorderRadius.circular(10),
-                    child: Image.asset(
-                      'assets/images/logo.png',
-                      height: 40,
-                      width: 40,
-                      fit: BoxFit.cover,
-                    ),
-                  ),
-                  const SizedBox(width: 12),
                   Expanded(
                     child: Text(
                       'Categorias',
