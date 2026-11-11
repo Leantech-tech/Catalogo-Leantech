@@ -124,7 +124,7 @@ class _SplashScreenState extends State<SplashScreen>
                           borderRadius: BorderRadius.circular(28),
                           boxShadow: [
                             BoxShadow(
-                              color: AppTheme.brandPurple.withValues(
+                              color: AppTheme.brandGray.withValues(
                                 alpha: _shadowAnimation.value,
                               ),
                               blurRadius: 50,
@@ -142,7 +142,7 @@ class _SplashScreenState extends State<SplashScreen>
                                 const Icon(
                               Icons.restaurant,
                               size: 56,
-                              color: AppTheme.brandPurple,
+                              color: AppTheme.brandGray,
                             ),
                           ),
                         ),
@@ -254,7 +254,7 @@ class _TypewriterTextState extends State<_TypewriterText> {
             width: 2,
             height: 16,
             margin: const EdgeInsets.only(left: 2),
-            color: AppTheme.brandPurple.withValues(alpha: 0.6),
+            color: AppTheme.brandGray.withValues(alpha: 0.6),
           ),
       ],
     );
@@ -287,14 +287,14 @@ class _PulsingDots extends StatelessWidget {
               height: 10,
               margin: const EdgeInsets.symmetric(horizontal: 5),
               decoration: BoxDecoration(
-                color: AppTheme.brandPurple.withValues(alpha: opacity),
+                color: AppTheme.brandGray.withValues(alpha: opacity),
                 borderRadius: BorderRadius.circular(5),
               ),
               child: Transform.scale(
                 scale: scale,
                 child: Container(
                   decoration: BoxDecoration(
-                    color: AppTheme.brandPurple.withValues(alpha: opacity),
+                    color: AppTheme.brandGray.withValues(alpha: opacity),
                     borderRadius: BorderRadius.circular(5),
                   ),
                 ),

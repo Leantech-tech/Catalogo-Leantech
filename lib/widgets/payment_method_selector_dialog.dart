@@ -114,12 +114,12 @@ class _PaymentMethodSelectorDialogState
                   Container(
                     padding: const EdgeInsets.all(10),
                     decoration: BoxDecoration(
-                      color: AppTheme.brandPurple.withValues(alpha: 0.1),
+                      color: AppTheme.brandGray.withValues(alpha: 0.1),
                       borderRadius: BorderRadius.circular(12),
                     ),
                     child: Icon(
                       Icons.payment_outlined,
-                      color: AppTheme.brandPurple,
+                      color: AppTheme.brandGray,
                       size: 28,
                     ),
                   ),
@@ -155,7 +155,7 @@ class _PaymentMethodSelectorDialogState
                 const Center(
                   child: Padding(
                     padding: EdgeInsets.all(16),
-                    child: CircularProgressIndicator(color: AppTheme.brandPurple),
+                    child: CircularProgressIndicator(color: AppTheme.brandGray),
                   ),
                 )
               else if (_error != null)
@@ -229,14 +229,14 @@ class _PaymentMethodSelectorDialogState
               ElevatedButton(
                 onPressed: _isLoading || _selectedMethod == null ? null : _confirmar,
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: AppTheme.brandPurple,
+                  backgroundColor: AppTheme.brandGray,
                   foregroundColor: Colors.white,
                   minimumSize: const Size(double.infinity, 52),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(14),
                   ),
                   elevation: 0,
-                  disabledBackgroundColor: AppTheme.brandPurple.withValues(alpha: 0.5),
+                  disabledBackgroundColor: AppTheme.brandGray.withValues(alpha: 0.5),
                 ),
                 child: _isLoading
                     ? const SizedBox(

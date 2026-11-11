@@ -100,12 +100,12 @@ class _SupportLoginSheetState extends State<SupportLoginSheet> {
                 Container(
                   padding: const EdgeInsets.all(10),
                   decoration: BoxDecoration(
-                    color: AppTheme.brandPurple.withValues(alpha: 0.1),
+                    color: AppTheme.brandGray.withValues(alpha: 0.1),
                     borderRadius: BorderRadius.circular(12),
                   ),
                   child: const Icon(
                     Icons.admin_panel_settings_outlined,
-                    color: AppTheme.brandPurple,
+                    color: AppTheme.brandGray,
                     size: 24,
                   ),
                 ),
@@ -219,7 +219,7 @@ class _SupportLoginSheetState extends State<SupportLoginSheet> {
               child: ElevatedButton(
                 onPressed: _validateAndSubmit,
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: AppTheme.brandPurple,
+                  backgroundColor: AppTheme.brandGray,
                   foregroundColor: Colors.white,
                   minimumSize: const Size(double.infinity, 52),
                   shape: RoundedRectangleBorder(

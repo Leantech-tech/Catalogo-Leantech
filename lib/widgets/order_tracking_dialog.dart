@@ -134,12 +134,12 @@ class _OrderTrackingDialogState extends State<OrderTrackingDialog> {
                   Container(
                     padding: const EdgeInsets.all(10),
                     decoration: BoxDecoration(
-                      color: const Color(0xFFF3E5F5),
+                      color: const Color(0xFFF5F5F5),
                       borderRadius: BorderRadius.circular(12),
                     ),
                     child: Icon(
                       Icons.delivery_dining_outlined,
-                      color: AppTheme.brandPurple,
+                      color: AppTheme.brandGray,
                       size: 28,
                     ),
                   ),
@@ -199,7 +199,7 @@ class _OrderTrackingDialogState extends State<OrderTrackingDialog> {
                       height: 18,
                       child: CircularProgressIndicator(
                         strokeWidth: 2,
-                        color: AppTheme.brandPurple,
+                        color: AppTheme.brandGray,
                       ),
                     ),
                 ],
@@ -208,7 +208,7 @@ class _OrderTrackingDialogState extends State<OrderTrackingDialog> {
               ElevatedButton(
                 onPressed: () => Navigator.of(context).pop(),
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: AppTheme.brandPurple,
+                  backgroundColor: AppTheme.brandGray,
                   foregroundColor: Colors.white,
                   minimumSize: const Size(double.infinity, 52),
                   shape: RoundedRectangleBorder(
@@ -380,7 +380,7 @@ class _TimelineStep extends StatelessWidget {
         ? const Color(0xFFE31E24)
         : isCompleted
             ? const Color(0xFF00A650)
-            : AppTheme.brandPurple;
+            : AppTheme.brandGray;
     final Color inactiveColor = AppTheme.border(context);
     final Color dotColor = isCurrent || isCompleted ? activeColor : inactiveColor;
     final Color lineColor = isCompleted ? activeColor : inactiveColor;

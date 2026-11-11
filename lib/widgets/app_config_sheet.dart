@@ -58,7 +58,7 @@ class _AppConfigSheetState extends State<AppConfigSheet> {
           'Configurações salvas',
           style: GoogleFonts.inter(fontWeight: FontWeight.w600),
         ),
-        backgroundColor: AppTheme.brandPurple,
+        backgroundColor: AppTheme.brandGray,
         behavior: SnackBarBehavior.floating,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
         margin: const EdgeInsets.all(16),
@@ -110,10 +110,10 @@ class _AppConfigSheetState extends State<AppConfigSheet> {
           Container(
             padding: const EdgeInsets.all(10),
             decoration: BoxDecoration(
-              color: AppTheme.brandPurple.withValues(alpha: 0.1),
+              color: AppTheme.brandGray.withValues(alpha: 0.1),
               borderRadius: BorderRadius.circular(12),
             ),
-            child: Icon(icon, color: AppTheme.brandPurple, size: 22),
+            child: Icon(icon, color: AppTheme.brandGray, size: 22),
           ),
           const SizedBox(width: 14),
           Expanded(
@@ -159,7 +159,7 @@ class _AppConfigSheetState extends State<AppConfigSheet> {
         Checkbox(
           value: value,
           onChanged: onChanged,
-          activeColor: AppTheme.brandPurple,
+          activeColor: AppTheme.brandGray,
         ),
         Text(
           label,
@@ -222,7 +222,7 @@ class _AppConfigSheetState extends State<AppConfigSheet> {
             control: Switch(
               value: _useComanda,
               onChanged: (value) => setState(() => _useComanda = value),
-              activeThumbColor: AppTheme.brandPurple,
+              activeThumbColor: AppTheme.brandGray,
             ),
           ),
           if (!_useComanda) ...[
@@ -248,7 +248,7 @@ class _AppConfigSheetState extends State<AppConfigSheet> {
                         fontSize: AppTheme.fontSizeSm,
                         color: Colors.grey[400],
                       ),
-                      prefixIcon: const Icon(Icons.phone, color: AppTheme.brandPurple, size: 20),
+                      prefixIcon: const Icon(Icons.phone, color: AppTheme.brandGray, size: 20),
                       filled: true,
                       fillColor: AppTheme.inputBg(context),
                       border: OutlineInputBorder(
@@ -303,7 +303,7 @@ class _AppConfigSheetState extends State<AppConfigSheet> {
             control: Switch(
               value: _isDarkMode,
               onChanged: (value) => setState(() => _isDarkMode = value),
-              activeThumbColor: AppTheme.brandPurple,
+              activeThumbColor: AppTheme.brandGray,
             ),
           ),
           const SizedBox(height: 8),
@@ -339,7 +339,7 @@ class _AppConfigSheetState extends State<AppConfigSheet> {
             child: ElevatedButton(
               onPressed: _saveAndClose,
               style: ElevatedButton.styleFrom(
-                backgroundColor: AppTheme.brandPurple,
+                backgroundColor: AppTheme.brandGray,
                 foregroundColor: Colors.white,
                 minimumSize: const Size(double.infinity, 52),
                 shape: RoundedRectangleBorder(

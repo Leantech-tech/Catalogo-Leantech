@@ -187,7 +187,7 @@ class ComandaViewerSheet extends StatelessWidget {
                                     color: AppTheme.inputBg(context),
                                     child: const Center(
                                       child: CircularProgressIndicator(
-                                        color: AppTheme.brandPurple,
+                                        color: AppTheme.brandGray,
                                         strokeWidth: 2,
                                       ),
                                     ),
@@ -251,7 +251,7 @@ class ComandaViewerSheet extends StatelessWidget {
                                   style: GoogleFonts.poppins(
                                     fontSize: 12,
                                     fontWeight: FontWeight.w700,
-                                    color: AppTheme.brandPurple,
+                                    color: AppTheme.brandGray,
                                   ),
                                 ),
                               ),
@@ -293,7 +293,7 @@ class ComandaViewerSheet extends StatelessWidget {
                 style: GoogleFonts.poppins(
                   fontSize: 20,
                   fontWeight: FontWeight.w700,
-                  color: AppTheme.brandPurple,
+                  color: AppTheme.brandGray,
                 ),
               ),
             ],
@@ -303,7 +303,7 @@ class ComandaViewerSheet extends StatelessWidget {
           ElevatedButton(
             onPressed: () => Navigator.pop(context),
             style: ElevatedButton.styleFrom(
-              backgroundColor: AppTheme.brandPurple,
+              backgroundColor: AppTheme.brandGray,
               foregroundColor: Colors.white,
               minimumSize: const Size(double.infinity, 54),
               shape: RoundedRectangleBorder(

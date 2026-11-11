@@ -179,7 +179,7 @@ class _LoginSheetState extends State<LoginSheet> {
             child: ElevatedButton(
               onPressed: isLoading ? null : _login,
               style: ElevatedButton.styleFrom(
-                backgroundColor: AppTheme.brandPurple,
+                backgroundColor: AppTheme.brandGray,
                 foregroundColor: Colors.white,
                 minimumSize: const Size(double.infinity, 52),
                 shape: RoundedRectangleBorder(

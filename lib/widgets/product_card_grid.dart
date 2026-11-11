@@ -130,14 +130,14 @@ class ProductCardGrid extends StatelessWidget {
                               Icon(
                                 Icons.tune,
                                 size: badgeIconSize,
-                                color: AppTheme.brandPurple.withValues(alpha: 0.8),
+                                color: AppTheme.brandGray.withValues(alpha: 0.8),
                               ),
                               const SizedBox(width: 4),
                               Text(
                                 'Personalizável',
                                 style: GoogleFonts.inter(
                                   fontSize: badgeFontSize,
-                                  color: AppTheme.brandPurple.withValues(alpha: 0.8),
+                                  color: AppTheme.brandGray.withValues(alpha: 0.8),
                                   fontWeight: FontWeight.w500,
                                 ),
                               ),
@@ -154,7 +154,7 @@ class ProductCardGrid extends StatelessWidget {
                               style: GoogleFonts.poppins(
                                 fontSize: priceFontSize,
                                 fontWeight: FontWeight.w800,
-                                color: AppTheme.brandPurple,
+                                color: AppTheme.brandGray,
                               ),
                               maxLines: 1,
                               overflow: TextOverflow.ellipsis,
@@ -165,11 +165,11 @@ class ProductCardGrid extends StatelessWidget {
                             width: addButtonSize,
                             height: addButtonSize,
                             decoration: BoxDecoration(
-                              color: AppTheme.brandPurple,
+                              color: AppTheme.brandGray,
                               borderRadius: BorderRadius.circular(isSmallPhone ? 10 : 12),
                               boxShadow: [
                                 BoxShadow(
-                                  color: AppTheme.brandPurple.withValues(alpha: 0.35),
+                                  color: AppTheme.brandGray.withValues(alpha: 0.35),
                                   blurRadius: 10,
                                   offset: const Offset(0, 4),
                                 ),

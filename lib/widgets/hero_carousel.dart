@@ -80,7 +80,7 @@ class _HeroCarouselState extends State<HeroCarousel> {
         resolvedUrl,
         fit: BoxFit.cover,
         errorBuilder: (context, error, stackTrace) => Container(
-          color: AppTheme.brandPurple,
+          color: AppTheme.brandGray,
           child: const Center(
             child: Icon(
               Icons.image_not_supported,
@@ -96,7 +96,7 @@ class _HeroCarouselState extends State<HeroCarousel> {
       resolvedUrl,
       fit: BoxFit.cover,
       errorBuilder: (context, error, stackTrace) => Container(
-        color: AppTheme.brandPurple,
+        color: AppTheme.brandGray,
         child: const Center(
           child: Icon(
             Icons.image_not_supported,

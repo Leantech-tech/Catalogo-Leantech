@@ -112,7 +112,7 @@ class ComandaOrderSheet extends StatelessWidget {
                           style: GoogleFonts.poppins(
                             fontSize: 13,
                             fontWeight: FontWeight.w700,
-                            color: AppTheme.brandPurple,
+                            color: AppTheme.brandGray,
                           ),
                         ),
                       ),
@@ -190,7 +190,7 @@ class ComandaOrderSheet extends StatelessWidget {
                 style: GoogleFonts.poppins(
                   fontSize: 20,
                   fontWeight: FontWeight.w700,
-                  color: AppTheme.brandPurple,
+                  color: AppTheme.brandGray,
                 ),
               ),
             ],
@@ -200,7 +200,7 @@ class ComandaOrderSheet extends StatelessWidget {
           ElevatedButton(
             onPressed: () => Navigator.pop(context),
             style: ElevatedButton.styleFrom(
-              backgroundColor: AppTheme.brandPurple,
+              backgroundColor: AppTheme.brandGray,
               foregroundColor: Colors.white,
               minimumSize: const Size(double.infinity, 54),
               shape: RoundedRectangleBorder(

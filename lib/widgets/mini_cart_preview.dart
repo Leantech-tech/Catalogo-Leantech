@@ -180,7 +180,7 @@ class MiniCartPreview extends StatelessWidget {
                   style: GoogleFonts.poppins(
                     fontSize: AppTheme.fontSizeMd,
                     fontWeight: FontWeight.w800,
-                    color: AppTheme.brandPurple,
+                    color: AppTheme.brandGray,
                   ),
                 ),
                 if (isPromocao && precoOriginal != null && precoOriginal > item.basePrice)
@@ -276,7 +276,7 @@ class MiniCartPreview extends StatelessWidget {
                       children: [
                         Icon(
                           Icons.shopping_bag_outlined,
-                          color: AppTheme.brandPurple,
+                          color: AppTheme.brandGray,
                           size: 24,
                         ),
                         const SizedBox(width: 10),
@@ -294,7 +294,7 @@ class MiniCartPreview extends StatelessWidget {
                           Container(
                             padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
                             decoration: BoxDecoration(
-                              color: AppTheme.brandPurple.withValues(alpha: 0.1),
+                              color: AppTheme.brandGray.withValues(alpha: 0.1),
                               borderRadius: BorderRadius.circular(12),
                             ),
                             child: Text(
@@ -302,7 +302,7 @@ class MiniCartPreview extends StatelessWidget {
                               style: GoogleFonts.inter(
                                 fontSize: AppTheme.fontSizeSm,
                                 fontWeight: FontWeight.w700,
-                                color: AppTheme.brandPurple,
+                                color: AppTheme.brandGray,
                               ),
                             ),
                           ),
@@ -382,7 +382,7 @@ class MiniCartPreview extends StatelessWidget {
                     ElevatedButton(
                       onPressed: isEmpty ? null : onCheckout,
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: AppTheme.brandPurple,
+                        backgroundColor: AppTheme.brandGray,
                         foregroundColor: Colors.white,
                         disabledBackgroundColor: AppTheme.inputBg(context),
                         disabledForegroundColor: AppTheme.textSecondary(context),

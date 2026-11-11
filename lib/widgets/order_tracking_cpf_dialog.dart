@@ -121,12 +121,12 @@ class _OrderTrackingCpfDialogState extends State<OrderTrackingCpfDialog> {
                   Container(
                     padding: const EdgeInsets.all(10),
                     decoration: BoxDecoration(
-                      color: const Color(0xFFF3E5F5),
+                      color: const Color(0xFFF5F5F5),
                       borderRadius: BorderRadius.circular(12),
                     ),
                     child: Icon(
                       Icons.search_outlined,
-                      color: AppTheme.brandPurple,
+                      color: AppTheme.brandGray,
                       size: 28,
                     ),
                   ),
@@ -186,7 +186,7 @@ class _OrderTrackingCpfDialogState extends State<OrderTrackingCpfDialog> {
                   ),
                   focusedBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(12),
-                    borderSide: const BorderSide(color: AppTheme.brandPurple, width: 1.5),
+                    borderSide: const BorderSide(color: AppTheme.brandGray, width: 1.5),
                   ),
                   errorBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(12),
@@ -222,14 +222,14 @@ class _OrderTrackingCpfDialogState extends State<OrderTrackingCpfDialog> {
               ElevatedButton(
                 onPressed: _isLoading ? null : _buscarPedido,
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: AppTheme.brandPurple,
+                  backgroundColor: AppTheme.brandGray,
                   foregroundColor: Colors.white,
                   minimumSize: const Size(double.infinity, 52),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(14),
                   ),
                   elevation: 0,
-                  disabledBackgroundColor: AppTheme.brandPurple.withValues(alpha: 0.5),
+                  disabledBackgroundColor: AppTheme.brandGray.withValues(alpha: 0.5),
                 ),
                 child: _isLoading
                     ? const SizedBox(

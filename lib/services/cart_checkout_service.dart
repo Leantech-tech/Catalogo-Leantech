@@ -531,7 +531,7 @@ class CartCheckoutService {
                       style: GoogleFonts.poppins(
                         fontSize: 18,
                         fontWeight: FontWeight.w700,
-                        color: AppTheme.brandPurple,
+                        color: AppTheme.brandGray,
                       ),
                     ),
                   ],
@@ -543,7 +543,7 @@ class CartCheckoutService {
                   child: FilledButton(
                     onPressed: closeDialog,
                     style: FilledButton.styleFrom(
-                      backgroundColor: AppTheme.brandPurple,
+                      backgroundColor: AppTheme.brandGray,
                       foregroundColor: Colors.white,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(14),

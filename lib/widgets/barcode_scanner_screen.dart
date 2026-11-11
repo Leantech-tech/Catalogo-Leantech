@@ -130,7 +130,7 @@ class _BarcodeScannerScreenState extends State<BarcodeScannerScreen> {
                 child: ElevatedButton(
                   onPressed: () => _submitManual(_manualController.text),
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: AppTheme.brandPurple,
+                    backgroundColor: AppTheme.brandGray,
                     foregroundColor: Colors.white,
                     padding: const EdgeInsets.symmetric(vertical: 16),
                     shape: RoundedRectangleBorder(
@@ -216,7 +216,7 @@ class _BarcodeScannerScreenState extends State<BarcodeScannerScreen> {
                     Container(
                       width: 280,
                       decoration: BoxDecoration(
-                        border: Border.all(color: AppTheme.brandPurple, width: 2),
+                        border: Border.all(color: AppTheme.brandGray, width: 2),
                         borderRadius: BorderRadius.circular(16),
                       ),
                     ),
@@ -246,7 +246,7 @@ class _BarcodeScannerScreenState extends State<BarcodeScannerScreen> {
                             height: 20,
                             child: CircularProgressIndicator(
                               strokeWidth: 2,
-                              color: AppTheme.brandPurple,
+                              color: AppTheme.brandGray,
                             ),
                           ),
                           const SizedBox(width: 12),

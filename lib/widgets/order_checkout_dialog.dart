@@ -375,7 +375,7 @@ class _OrderCheckoutDialogState extends State<OrderCheckoutDialog> {
   Widget _buildAddAddressButton() {
     return Container(
       decoration: BoxDecoration(
-        color: AppTheme.brandPurple,
+        color: AppTheme.brandGray,
         borderRadius: BorderRadius.circular(12),
       ),
       child: IconButton(
@@ -704,10 +704,10 @@ class _OrderCheckoutDialogState extends State<OrderCheckoutDialog> {
             Container(
               padding: const EdgeInsets.all(12),
               decoration: BoxDecoration(
-                color: AppTheme.brandPurple.withValues(alpha: 0.1),
+                color: AppTheme.brandGray.withValues(alpha: 0.1),
                 shape: BoxShape.circle,
               ),
-              child: Icon(icon, color: AppTheme.brandPurple, size: 28),
+              child: Icon(icon, color: AppTheme.brandGray, size: 28),
             ),
             const SizedBox(width: 14),
             Expanded(
@@ -788,7 +788,7 @@ class _OrderCheckoutDialogState extends State<OrderCheckoutDialog> {
           style: GoogleFonts.inter(
             fontSize: 13,
             fontWeight: FontWeight.w600,
-            color: AppTheme.brandPurple,
+            color: AppTheme.brandGray,
           ),
         ),
         const SizedBox(height: 20),
@@ -871,19 +871,19 @@ class _OrderCheckoutDialogState extends State<OrderCheckoutDialog> {
           Container(
             padding: const EdgeInsets.all(12),
             decoration: BoxDecoration(
-              color: AppTheme.brandPurple.withValues(alpha: 0.08),
+              color: AppTheme.brandGray.withValues(alpha: 0.08),
               borderRadius: BorderRadius.circular(12),
             ),
             child: Row(
               children: [
-                Icon(Icons.info_outline, color: AppTheme.brandPurple, size: 18),
+                Icon(Icons.info_outline, color: AppTheme.brandGray, size: 18),
                 const SizedBox(width: 8),
                 Expanded(
                   child: Text(
                     'O entregador receberá o pagamento no momento da entrega.',
                     style: GoogleFonts.inter(
                       fontSize: 12,
-                      color: AppTheme.brandPurple,
+                      color: AppTheme.brandGray,
                     ),
                   ),
                 ),
@@ -908,7 +908,7 @@ class _OrderCheckoutDialogState extends State<OrderCheckoutDialog> {
           child: ElevatedButton(
             onPressed: _isLoading ? null : _confirmar,
             style: ElevatedButton.styleFrom(
-              backgroundColor: AppTheme.brandPurple,
+              backgroundColor: AppTheme.brandGray,
               foregroundColor: Colors.white,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(14),
@@ -949,8 +949,8 @@ class _OrderCheckoutDialogState extends State<OrderCheckoutDialog> {
                 ),
               ),
               style: OutlinedButton.styleFrom(
-                foregroundColor: AppTheme.brandPurple,
-                side: const BorderSide(color: AppTheme.brandPurple, width: 1.5),
+                foregroundColor: AppTheme.brandGray,
+                side: const BorderSide(color: AppTheme.brandGray, width: 1.5),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(14),
                 ),
@@ -1052,18 +1052,18 @@ class _OrderCheckoutDialogState extends State<OrderCheckoutDialog> {
         padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 16),
         decoration: BoxDecoration(
           color: selected
-              ? AppTheme.brandPurple.withValues(alpha: 0.12)
+              ? AppTheme.brandGray.withValues(alpha: 0.12)
               : AppTheme.inputBg(context),
           borderRadius: BorderRadius.circular(12),
           border: Border.all(
-            color: selected ? AppTheme.brandPurple : AppTheme.border(context),
+            color: selected ? AppTheme.brandGray : AppTheme.border(context),
           ),
         ),
         child: Row(
           children: [
             Icon(
               selected ? Icons.check_circle : Icons.radio_button_unchecked,
-              color: selected ? AppTheme.brandPurple : AppTheme.textSecondary(context),
+              color: selected ? AppTheme.brandGray : AppTheme.textSecondary(context),
               size: 20,
             ),
             const SizedBox(width: 10),
@@ -1072,7 +1072,7 @@ class _OrderCheckoutDialogState extends State<OrderCheckoutDialog> {
               style: GoogleFonts.inter(
                 fontSize: 14,
                 fontWeight: FontWeight.w600,
-                color: selected ? AppTheme.brandPurple : AppTheme.textPrimary(context),
+                color: selected ? AppTheme.brandGray : AppTheme.textPrimary(context),
               ),
             ),
           ],

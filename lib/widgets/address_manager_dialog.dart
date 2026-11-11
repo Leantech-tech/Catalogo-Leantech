@@ -445,8 +445,8 @@ class _AddressManagerDialogState extends State<AddressManagerDialog> {
                             ),
                           ),
                           style: OutlinedButton.styleFrom(
-                            foregroundColor: AppTheme.brandPurple,
-                            side: BorderSide(color: AppTheme.brandPurple),
+                            foregroundColor: AppTheme.brandGray,
+                            side: BorderSide(color: AppTheme.brandGray),
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(12),
                             ),
@@ -505,7 +505,7 @@ class _AddressManagerDialogState extends State<AddressManagerDialog> {
                 child: ElevatedButton(
                   onPressed: _isSaving ? null : _salvar,
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: AppTheme.brandPurple,
+                    backgroundColor: AppTheme.brandGray,
                     foregroundColor: Colors.white,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(14),

@@ -246,7 +246,7 @@ class _ProductDetailScreenState extends State<ProductDetailScreen> {
             '${widget.product.name} (x$quantity) adicionado ao carrinho!',
             style: GoogleFonts.inter(fontWeight: FontWeight.w500),
           ),
-          backgroundColor: AppTheme.brandPurple,
+          backgroundColor: AppTheme.brandGray,
           behavior: SnackBarBehavior.floating,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(12),
@@ -315,7 +315,7 @@ class _ProductDetailScreenState extends State<ProductDetailScreen> {
               style: GoogleFonts.poppins(
                 fontSize: isSmallPhone ? 18 : 22,
                 fontWeight: FontWeight.w800,
-                color: AppTheme.brandPurple,
+                color: AppTheme.brandGray,
               ),
             ),
             if (hasOptions)
@@ -464,7 +464,7 @@ class _ProductDetailScreenState extends State<ProductDetailScreen> {
                                   Icon(
                                     Icons.check_circle,
                                     size: 18,
-                                    color: AppTheme.brandPurple,
+                                    color: AppTheme.brandGray,
                                   ),
                                   const SizedBox(width: 12),
                                   Expanded(
@@ -673,11 +673,11 @@ class _ProductDetailScreenState extends State<ProductDetailScreen> {
         padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
         decoration: BoxDecoration(
           color: isSelected
-              ? AppTheme.brandPurple.withValues(alpha: 0.08)
+              ? AppTheme.brandGray.withValues(alpha: 0.08)
               : AppTheme.inputBg(context),
           borderRadius: BorderRadius.circular(12),
           border: Border.all(
-            color: isSelected ? AppTheme.brandPurple : AppTheme.border(context),
+            color: isSelected ? AppTheme.brandGray : AppTheme.border(context),
             width: isSelected ? 1.5 : 1,
           ),
         ),
@@ -698,7 +698,7 @@ class _ProductDetailScreenState extends State<ProductDetailScreen> {
                           fontSize: 14,
                           fontWeight: isSelected ? FontWeight.w600 : FontWeight.w500,
                           color: isSelected
-                              ? AppTheme.brandPurple
+                              ? AppTheme.brandGray
                               : AppTheme.textPrimary(context),
                         ),
                       ),
@@ -718,7 +718,7 @@ class _ProductDetailScreenState extends State<ProductDetailScreen> {
                         style: GoogleFonts.poppins(
                           fontSize: 14,
                           fontWeight: FontWeight.w700,
-                          color: AppTheme.brandPurple,
+                          color: AppTheme.brandGray,
                         ),
                       ),
                   ],
@@ -742,10 +742,10 @@ class _ProductDetailScreenState extends State<ProductDetailScreen> {
       width: 22,
       height: 22,
       decoration: BoxDecoration(
-        color: isSelected ? AppTheme.brandPurple : Colors.transparent,
+        color: isSelected ? AppTheme.brandGray : Colors.transparent,
         borderRadius: BorderRadius.circular(isMultiple ? 6 : 11),
         border: Border.all(
-          color: isSelected ? AppTheme.brandPurple : AppTheme.textSecondary(context),
+          color: isSelected ? AppTheme.brandGray : AppTheme.textSecondary(context),
           width: 1.5,
         ),
       ),
@@ -778,7 +778,7 @@ class _ProductDetailScreenState extends State<ProductDetailScreen> {
               child: Icon(
                 Icons.remove,
                 size: 16,
-                color: AppTheme.brandPurple,
+                color: AppTheme.brandGray,
               ),
             ),
           ),
@@ -800,7 +800,7 @@ class _ProductDetailScreenState extends State<ProductDetailScreen> {
               child: Icon(
                 Icons.add,
                 size: 16,
-                color: AppTheme.brandPurple,
+                color: AppTheme.brandGray,
               ),
             ),
           ),
@@ -995,7 +995,7 @@ class _ProductDetailScreenState extends State<ProductDetailScreen> {
               ElevatedButton(
                 onPressed: (_added || !canAdd) ? null : _addToCart,
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: _added ? Colors.green[600] : AppTheme.brandPurple,
+                  backgroundColor: _added ? Colors.green[600] : AppTheme.brandGray,
                   foregroundColor: Colors.white,
                   minimumSize: Size(double.infinity, isSmallPhone ? 50 : 58),
                   shape: RoundedRectangleBorder(
@@ -1073,7 +1073,7 @@ class _ProductDetailScreenState extends State<ProductDetailScreen> {
         padding: EdgeInsets.all(isSmallPhone ? 8 : 12),
         child: Icon(
           icon,
-          color: AppTheme.brandPurple,
+          color: AppTheme.brandGray,
           size: isSmallPhone ? 18 : 22,
         ),
       ),

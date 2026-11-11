@@ -3,8 +3,8 @@ import 'package:google_fonts/google_fonts.dart';
 
 class AppTheme {
   // Brand Colors - Napoleta palette
-  static const Color brandPurple = Color(0xFF7B1FA2);
-  static const Color brandPurpleDark = Color(0xFF4A148C);
+  static const Color brandGray = Color(0xFF616161);
+  static const Color brandGrayDark = Color(0xFF424242);
   static const Color brandGreen = Color(0xFF00A650);
   static const Color brandYellow = Color(0xFFFFD600);
   static const Color honeyGold = Color(0xFFFFD600);
@@ -67,10 +67,10 @@ class AppTheme {
 
   static ThemeData get _baseTheme => ThemeData(
         useMaterial3: true,
-        primaryColor: brandPurple,
+        primaryColor: brandGray,
         elevatedButtonTheme: ElevatedButtonThemeData(
           style: ElevatedButton.styleFrom(
-            backgroundColor: brandPurple,
+            backgroundColor: brandGray,
             foregroundColor: Colors.white,
             elevation: 0,
             padding: const EdgeInsets.symmetric(vertical: 14, horizontal: 24),
@@ -89,8 +89,8 @@ class AppTheme {
         brightness: Brightness.light,
         scaffoldBackgroundColor: softBackground,
         colorScheme: ColorScheme.fromSeed(
-          seedColor: brandPurple,
-          primary: brandPurple,
+          seedColor: brandGray,
+          primary: brandGray,
           secondary: honeyGold,
           surface: Colors.white,
           brightness: Brightness.light,
@@ -144,7 +144,7 @@ class AppTheme {
         ),
         chipTheme: ChipThemeData(
           backgroundColor: lightGrey,
-          selectedColor: brandPurple,
+          selectedColor: brandGray,
           labelStyle: GoogleFonts.inter(
             fontSize: 13,
             fontWeight: FontWeight.w500,
@@ -167,8 +167,8 @@ class AppTheme {
         brightness: Brightness.dark,
         scaffoldBackgroundColor: darkBackground,
         colorScheme: ColorScheme.fromSeed(
-          seedColor: brandPurple,
-          primary: brandPurple,
+          seedColor: brandGray,
+          primary: brandGray,
           secondary: honeyGold,
           surface: darkSurface,
           brightness: Brightness.dark,
@@ -222,7 +222,7 @@ class AppTheme {
         ),
         chipTheme: ChipThemeData(
           backgroundColor: darkInputBg,
-          selectedColor: brandPurple,
+          selectedColor: brandGray,
           labelStyle: GoogleFonts.inter(
             fontSize: 13,
             fontWeight: FontWeight.w500,

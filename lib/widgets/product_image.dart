@@ -28,8 +28,8 @@ class ProductImage extends StatelessWidget {
       icon: Icons.cake,
     ),
     '2': const _PlaceholderStyle( // Tamanho Família
-      bgColor: Color(0xFFF3E5F5),
-      iconColor: Color(0xFF7B1FA2),
+      bgColor: Color(0xFFF5F5F5),
+      iconColor: Color(0xFF616161),
       icon: Icons.people,
     ),
     '3': const _PlaceholderStyle( // Salgados
